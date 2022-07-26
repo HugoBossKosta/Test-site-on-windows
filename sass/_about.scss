@@ -1,0 +1,149 @@
+//  Начало вёрстки блока о компании
+
+.about {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+&-list{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+
+&-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        margin-bottom: 25px;
+    }
+}
+
+&-top {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    height: 461px;
+    background-color: #FFFFFF;
+    margin-bottom: 70px;
+    border-radius: 3px;
+
+    @media screen and (max-width:992px) {
+        max-width: 880px;
+        
+    }
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__left {
+        display: flex;
+        flex-flow: column;
+        width: 55%;
+    }
+    
+    &__logo {
+        width: 199px;
+        height: 140px;
+
+        margin: 46px 0px 62px 50px;
+
+        @media screen and (max-width:992px) {
+            
+            margin-left: 28px;
+     }
+    }
+
+    &__description {
+        width: 50%;
+        height: 214px;
+        margin: 45px 52px 0 auto;
+        min-width: 230px;
+        min-height: 160px;
+       
+        @media screen and (max-width:992px) {
+            width: 55%;
+           
+            margin:45px 52px 0 auto;
+     }
+    }
+
+   &__big-right {
+    
+    width: 595px;
+    
+    @media screen and (max-width:992px) {
+        display: none;
+ }
+   }
+
+   &__small-right {
+    display: none;
+    @media screen and (max-width:992px)
+    {
+        display: block;
+    width: 447px;
+    }
+   }
+}
+
+&-down {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+@media screen and (max-width:992px) {
+justify-content: center;
+}
+
+
+&__item {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    margin-bottom: 120px;
+    padding: 0 40px 0 40px;
+    @media screen and (max-width:992px) {
+        width: 35%;
+        margin-bottom: 70px;
+    }
+
+}
+
+&__img {
+    width: 90px;
+    height: 90px;
+}
+
+&__text {
+    margin-left: 24px;
+}
+
+}
+
+&-button {
+    padding: 18px 32px;
+    background-color: #EF7F1A;;
+    border-radius: 3px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 88px auto;
+
+    @media screen and (max-width:992px) {
+        margin: 0 auto 1px auto;
+    }
+
+&__icon {
+margin-right: 24px;
+}
+}
+}

@@ -1,0 +1,167 @@
+// Начало вёрстки формы заявки под навигацией
+
+
+label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: start;
+        margin-left: 10px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .main {
+        background-image: url('../images/underhead/background_underhead.jpg');
+        padding-bottom: 65px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .underheader {
+        width: 1200px;
+        margin: 0 auto;
+    @media screen and (max-width:992px) {
+        max-width: 880px;
+    }
+
+    }
+    
+    .main-info {
+        display: flex;
+        padding-top: 69px;
+      
+    
+    
+    }
+    
+    
+    
+    
+    
+    .left {
+        padding: 60px 52px 0px 85px;
+        @media screen and (max-width:1152px) {
+            margin-left: -40px;
+        }
+        
+        @media screen and (max-width:992px) {
+        max-width: 75%;
+        }
+        &__advantages {
+            display: flex;
+        }
+    
+        &__title {
+            color: #FFFFFF;
+            margin-bottom: 18px;
+            padding-left: 20px;
+            font-size: 36px;
+            font-weight: 100;
+            line-height: 42px;
+        }
+    
+        &__brand-name {
+            color:  #EF7F04;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    
+        &__advantages-icon {
+            margin-left: 20px;
+        }
+    
+    
+        &__advantages-description {
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 18px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+    }
+    
+    
+    .right {
+    
+    text-align: center;
+    margin-left: 52px;
+    
+    @media screen and (max-width:1152px) {
+        margin-left: -40px;
+    }
+
+
+    &__feedback {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 405px;
+    padding: 43px 40px 65px 40px;
+
+    @media screen and (max-width:992px) {
+        display: none;
+    }
+
+   
+    }
+    
+    &__feedback-titile {
+        font-size: 18px;
+        color: #2F2F51;
+        font-weight: 700;
+        margin-bottom: 27px;
+    }
+    
+    .inputfeed {
+        margin-bottom: 24px;
+    
+        &__item {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            height: 40px;
+           background-color: #E2E2E2;
+           border: none;
+           border-radius: 3px;
+           padding-left: 16px;
+
+     
+    
+        }
+    
+        &__item::placeholder {
+            color: #424268;
+        }
+    
+        &__item-check {
+            width: 25px;
+            height: 25px;
+            margin-top: 15px;
+        }
+    
+        &__checkbox {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &__feedback-button {
+        padding: 19px 40px;
+        background-color: #EF7F04;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    
+    &__feedback-roulette {
+        position: absolute;
+        left: -90px;
+        bottom: -45px;
+    }
+    }

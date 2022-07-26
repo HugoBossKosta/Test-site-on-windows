@@ -1,0 +1,87 @@
+// Начало вёрстки блока сервисы
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-sections {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    font-weight: 700;
+    }
+
+
+.services {
+    
+        margin-top: 70px;
+        margin-bottom: 48px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:992px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-item {
+            width: 49%;
+            min-width: 300px;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            padding: 55px 0px 38px 50px;
+            object-fit: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+
+            &__header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+    
+                &-title {
+                    margin-left: 20px;
+                    width: 255px;
+                }
+            }
+         
+            &__descriptions {
+                width: 220PX;
+                @media screen and (max-width:992px) {
+                    width: 180px;
+                }
+            }
+        }
+
+        .card-item1 {
+            background-image: url('../images/services/us1_background.png');
+        }
+
+        .card-item2 {
+            background-image: url('../images/services/us2_background_obrez.jpg');
+        }
+
+        .card-item3 {
+            background-image: url('..//images/services/us3_background.png');
+        }
+
+        .card-item4 {
+            background-image: url('../images/services/us4_background.png');
+        }
+     
+    }
+}

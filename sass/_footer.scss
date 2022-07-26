@@ -1,0 +1,47 @@
+// Начало верстки подвала сайта
+
+footer {
+    background-color: #2F2F51;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    color:#FFFFFF;
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.footer-left {
+    &__logo {
+        margin-right: 22px;
+    }
+}
+
+
+.footer-right {
+    &__text-left {
+        margin-right: 25px;
+    }
+
+    &__link {
+        color:#FFFFFF;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+}

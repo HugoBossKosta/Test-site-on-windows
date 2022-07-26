@@ -1,0 +1,85 @@
+// Начало вёрстки Гарантия Качества
+
+.quality-container {
+    display: flex;
+    justify-content: center;
+    min-width: 800px;
+    
+}
+
+.quality {
+    width: 1200px;
+    @media screen and (max-width:992px) {
+        width: 880px;
+    }
+    
+    &__top {
+        background-image: url('../images/quality/quality_background.png');
+        padding: 35px 0px 75px 0px;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 56px;
+        @media screen and (max-width:992px) {
+            margin-bottom: 29px;
+            padding: 0px;
+            width: 880px;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width:992px) {
+            flex-wrap: wrap;
+        }
+
+    }
+    
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    
+    &__item {
+    text-align: center;
+
+    @media screen and (max-width:992px) {
+        margin-bottom:88px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 250px
+        
+    }
+    }
+    
+    &__description {
+        color: #FFFFFF;
+        width: 170px;
+        
+    }
+    
+    &__icon {
+        margin-bottom: 40px;
+        height: 90px;
+    }
+    
+    &__btn {
+        padding: 12px 54px;
+        background-color: #3B3A63;
+        border-radius: 3px;
+        line-height: 19px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 96px auto;
+    }
+    
+    &__btn-img {
+        margin-right: 22px;
+    }
+    
+}

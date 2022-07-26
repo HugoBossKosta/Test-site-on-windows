@@ -1,0 +1,40 @@
+// Начало верстки Портфолио
+
+.portfolio
+{
+&-container {
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 48px 0 70px 0;
+
+}
+
+&__title {
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2F2F51;
+}
+
+&__items {
+display: flex;
+justify-content: center;
+
+@media screen and (max-width:992px)
+{
+    :last-child {
+        display: none;
+    }
+}
+
+    &-photo {
+        width: 215px;
+        height: 215px;
+        background-size: cover;
+        margin-right: 45px;
+    }
+}
+
+}
